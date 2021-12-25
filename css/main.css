@@ -1,0 +1,908 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif; }
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/homebg.png") no-repeat top center;
+  background-size: cover;
+  position: relative;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-width: 10px;
+  z-index: 1; }
+  #home #check {
+    display: none; }
+  #home .navbar {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0; }
+    #home .navbar label {
+      display: none; }
+    #home .navbar::before {
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      z-index: -1; }
+    #home .navbar .nav ul {
+      display: flex;
+      list-style: none; }
+      #home .navbar .nav ul li {
+        font-size: 1.1rem; }
+        #home .navbar .nav ul li a {
+          text-align: center;
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none;
+          padding: 0 20px; }
+    #home .navbar .social-media i {
+      padding: 0 15px;
+      color: #fff; }
+  #home .content {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    margin: 80px 60px; }
+    #home .content .title {
+      margin-top: 30px;
+      width: 40%; }
+      #home .content .title .btndown {
+        border-radius: 15px;
+        border: none;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 1.5;
+        line-height: 25px;
+        margin-top: 40px;
+        padding: 15px 30px;
+        margin-left: 20px;
+        font-weight: bold;
+        background-color: #e27a03;
+        transition: 0.3s; }
+        #home .content .title .btndown:hover {
+          background-color: #fff;
+          color: #e27a03; }
+      #home .content .title .btnfeatures {
+        border-radius: 15px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 1.5;
+        line-height: 25px;
+        margin-top: 40px;
+        padding: 15px 30px;
+        margin-left: 20px;
+        background-color: #4466c9;
+        transition: 0.3s; }
+        #home .content .title .btnfeatures:hover {
+          background-color: #fff;
+          color: #4466c9; }
+      #home .content .title h1 {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 4.5rem;
+        color: #fff; }
+    #home .content .home-phone {
+      width: 40%; }
+      #home .content .home-phone img {
+        width: 70%; }
+
+#features {
+  width: 100%; }
+  #features .title {
+    margin-top: 60px;
+    text-align: center; }
+    #features .title .title1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #648cff;
+      line-height: 75px; }
+    #features .title p {
+      color: gray;
+      font-size: 20px;
+      font-weight: 550; }
+  #features .feature-icon {
+    margin: 70px 120px;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center; }
+    #features .feature-icon .features-item {
+      display: flex;
+      height: 150px;
+      width: 380px; }
+      #features .feature-icon .features-item .text h1 {
+        margin: 20px 0;
+        font-size: 30px;
+        font-weight: 600; }
+      #features .feature-icon .features-item .icon {
+        color: orangered;
+        margin: 10px 40px;
+        font-size: 50px; }
+
+#slider {
+  padding-top: 15px;
+  margin-left: -15px;
+  margin-right: -15px; }
+  #slider .accordion {
+    padding-top: 170px;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 20px auto;
+    /*ul*/ }
+    #slider .accordion ul {
+      height: 600px;
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+      margin: 0;
+      padding: 0; }
+      #slider .accordion ul li {
+        display: table-cell;
+        vertical-align: bottom;
+        position: relative;
+        width: 54%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        transition: all 500ms ease; }
+        #slider .accordion ul li:nth-child(1) {
+          background-image: url("../images/drag1.png"); }
+        #slider .accordion ul li:nth-child(2) {
+          background-image: url("../images/drag2.png"); }
+        #slider .accordion ul li:nth-child(3) {
+          background-image: url("../images/drag3.png"); }
+    #slider .accordion:hover li {
+      width: 10%; }
+      #slider .accordion:hover li:hover {
+        width: 10.8%; }
+        #slider .accordion:hover li:hover a {
+          background: rgba(0, 0, 0, 0.4); }
+          #slider .accordion:hover li:hover a * {
+            opacity: 1;
+            transform: translateX(0); }
+
+#screenshots {
+  padding-top: 40px; }
+  #screenshots .s-title {
+    text-align: center; }
+    #screenshots .s-title h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #648cff;
+      line-height: 75px; }
+    #screenshots .s-title p {
+      color: gray;
+      font-size: 20px;
+      font-weight: 550; }
+  #screenshots .phones {
+    display: flex;
+    margin: 0px 10px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #screenshots .phones .screeniconscoludly {
+      z-index: 1;
+      color: black;
+      font-size: 12px;
+      background-color: yellow;
+      position: absolute;
+      border-radius: 100%;
+      padding: 30px 10px;
+      left: 620px; }
+    #screenshots .phones .screendereceicon {
+      z-index: 1;
+      color: black;
+      font-size: 12px;
+      background-color: yellow;
+      position: absolute;
+      border-radius: 100%;
+      padding: 30px 30px;
+      left: 290px; }
+    #screenshots .phones .left-col {
+      width: 20%;
+      margin: 0 80px; }
+      #screenshots .phones .left-col .icocloudly {
+        z-index: -1;
+        color: #fff;
+        font-size: 12px;
+        background-color: #e27a03;
+        position: absolute;
+        border-radius: 100%;
+        padding: 30px 20px; }
+      #screenshots .phones .left-col .cloicon {
+        font-size: 11rem;
+        font-weight: 300;
+        transform: rotate(90deg);
+        position: relative;
+        color: #dddddd;
+        z-index: -1;
+        left: 150px;
+        top: 200px; }
+      #screenshots .phones .left-col .rainyicon {
+        top: 300px;
+        left: 170px;
+        font-size: 14.6rem;
+        font-weight: 300;
+        transform: rotate(90deg);
+        position: relative;
+        color: #ddd;
+        z-index: -1; }
+      #screenshots .phones .left-col img {
+        align-items: center; }
+      #screenshots .phones .left-col .l-icon {
+        margin: 30px 0; }
+      #screenshots .phones .left-col .l-title h1 {
+        font-size: 36px;
+        margin: 15px 0;
+        letter-spacing: 1.5px; }
+      #screenshots .phones .left-col .l-title p {
+        color: gray;
+        font-size: 20px;
+        font-weight: 550; }
+    #screenshots .phones .right-col {
+      margin: 0 80px;
+      width: 20%; }
+      #screenshots .phones .right-col .sunnyicon {
+        top: 264px;
+        right: -179px;
+        font-size: 14.6rem;
+        font-weight: 300;
+        transform: rotate(90deg);
+        position: relative;
+        color: #ddd;
+        z-index: -1; }
+      #screenshots .phones .right-col .r-icon {
+        margin: 30px 0; }
+      #screenshots .phones .right-col .title h1 {
+        font-size: 36px;
+        margin: 15px 0;
+        letter-spacing: 1.5px; }
+      #screenshots .phones .right-col .title p {
+        color: gray;
+        font-size: 20px;
+        font-weight: 550; }
+
+#reviews {
+  height: 100%;
+  padding-top: 120px; }
+  #reviews .r-title {
+    text-align: center; }
+    #reviews .r-title h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #648cff;
+      line-height: 75px; }
+    #reviews .r-title p {
+      color: gray;
+      font-size: 20px;
+      font-weight: 550; }
+  #reviews .rewis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px; }
+    #reviews .rewis .rewi-item {
+      margin: 5px 60px;
+      width: 35%; }
+      #reviews .rewis .rewi-item .text {
+        margin: 20px 0;
+        font-size: 1.500rem;
+        line-height: 2rem;
+        font-weight: 800; }
+      #reviews .rewis .rewi-item .names {
+        font-size: 1.2rem;
+        font-weight: bold; }
+      #reviews .rewis .rewi-item .sol-tirnak {
+        font-size: 2rem;
+        color: #648cff; }
+      #reviews .rewis .rewi-item .sag-tirnak {
+        font-size: 2rem;
+        display: block;
+        position: relative;
+        left: 350px;
+        color: #648cff; }
+
+#download {
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/downloadbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  #download .d-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    #download .d-content .title {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 40%;
+      text-align: center; }
+      #download .d-content .title h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 30px;
+        margin: 20px 0; }
+      #download .d-content .title p {
+        text-align: center;
+        height: 60px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700; }
+    #download .d-content .image {
+      width: 40%; }
+      #download .d-content .image img {
+        position: relative;
+        bottom: -69px;
+        width: 70%;
+        margin-top: 70px; }
+
+footer {
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+  footer #check {
+    display: none; }
+  footer .navbar {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0; }
+    footer .navbar label {
+      display: none; }
+    footer .navbar::before {
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      z-index: -1; }
+    footer .navbar .nav ul {
+      display: flex;
+      list-style: none; }
+      footer .navbar .nav ul li {
+        font-size: 1.1rem; }
+        footer .navbar .nav ul li a {
+          text-align: center;
+          color: #afabab;
+          font-weight: bold;
+          text-decoration: none;
+          padding: 0 20px; }
+    footer .navbar .social-media i {
+      padding: 0 15px;
+      color: #afabab; }
+  footer .created {
+    padding: 80px 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+    footer .created h1 {
+      text-align: center;
+      font-size: 1rem; }
+  footer .divider {
+    text-align: center;
+    height: 1px;
+    background-color: #434769; }
+
+@media screen and (max-width: 1024px) {
+  #home {
+    height: 90vh;
+    width: 100%; }
+    #home .container .navbar label {
+      display: none; }
+    #home .container .content .home-phone {
+      width: 40%; }
+      #home .container .content .home-phone img {
+        top: 20px;
+        width: 85%; }
+  #slider .accordion {
+    padding-top: 170px;
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 20px auto; }
+    #slider .accordion ul {
+      height: 500px; }
+      #slider .accordion ul li:nth-child(1) {
+        background-image: url("../images/drag1.png"); }
+      #slider .accordion ul li:nth-child(2) {
+        background-image: url("../images/drag2.png"); }
+      #slider .accordion ul li:nth-child(3) {
+        background-image: url("../images/drag3.png"); }
+  #screenshots {
+    padding-top: 40px; }
+    #screenshots .phones {
+      display: flex;
+      margin: 0px 10px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #screenshots .phones .screeniconscoludly {
+        z-index: 1;
+        color: black;
+        font-size: 12px;
+        background-color: yellow;
+        position: absolute;
+        border-radius: 100%;
+        padding: 30px 10px;
+        left: 414px; }
+      #screenshots .phones .screendereceicon {
+        z-index: 1;
+        color: black;
+        font-size: 12px;
+        background-color: yellow;
+        position: absolute;
+        border-radius: 100%;
+        padding: 30px 30px;
+        left: 134px; }
+      #screenshots .phones .left-col {
+        width: 20%;
+        margin: 0 80px; }
+        #screenshots .phones .left-col .icocloudly {
+          z-index: -1;
+          color: #fff;
+          font-size: 12px;
+          background-color: #e27a03;
+          position: absolute;
+          border-radius: 100%;
+          padding: 30px 20px; }
+        #screenshots .phones .left-col .cloicon {
+          font-size: 11rem;
+          font-weight: 300;
+          transform: rotate(90deg);
+          position: relative;
+          color: #dddddd;
+          z-index: -1;
+          left: 197px;
+          top: 166px; }
+        #screenshots .phones .left-col .rainyicon {
+          top: 245px;
+          left: 217px;
+          font-size: 14.6rem;
+          font-weight: 300;
+          transform: rotate(90deg);
+          position: relative;
+          color: #ddd;
+          z-index: -1; }
+        #screenshots .phones .left-col img {
+          align-items: center; }
+        #screenshots .phones .left-col .l-icon {
+          margin: 30px 0; }
+        #screenshots .phones .left-col .l-title h1 {
+          font-size: 36px;
+          margin: 15px 0;
+          letter-spacing: 1.5px; }
+        #screenshots .phones .left-col .l-title p {
+          color: gray;
+          font-size: 20px;
+          font-weight: 550; }
+      #screenshots .phones .right-col {
+        margin: 0 125px;
+        width: 20%; }
+        #screenshots .phones .right-col .sunnyicon {
+          top: 216px;
+          right: -216px;
+          font-size: 14.6rem;
+          font-weight: 300;
+          transform: rotate(90deg);
+          position: relative;
+          color: #ddd;
+          z-index: -1; }
+        #screenshots .phones .right-col .r-icon {
+          margin: 30px 0; }
+        #screenshots .phones .right-col .title h1 {
+          font-size: 36px;
+          margin: 15px 0;
+          letter-spacing: 1.5px; }
+        #screenshots .phones .right-col .title p {
+          color: gray;
+          font-size: 20px;
+          font-weight: 550; }
+  #reviews .rewis .rewi-item {
+    margin: 5px 60px;
+    width: 35%; }
+    #reviews .rewis .rewi-item .text {
+      margin: 0; }
+    #reviews .rewis .rewi-item .names {
+      font-size: 1.2rem;
+      font-weight: bold; }
+    #reviews .rewis .rewi-item .sol-tirnak {
+      font-size: 1rem; }
+    #reviews .rewis .rewi-item .sag-tirnak {
+      font-size: 1rem; }
+  #download .d-content .title p {
+    margin: 35px 0; }
+  #download .d-content .image {
+    width: 40%; }
+    #download .d-content .image img {
+      position: relative;
+      bottom: -69px;
+      width: 75%;
+      margin-top: 70px; } }
+
+@media screen and (max-width: 850px) {
+  #home #check:checked ~ .container .navbar .nav {
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #404c61;
+    text-align: center;
+    opacity: 0.95;
+    transition: 0.3s;
+    border-bottom-left-radius: 120px;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px; }
+  #home #check:checked ~ .container .navbar label .menu-btn {
+    display: none; }
+  #home #check:checked ~ .container .navbar label .close-btn {
+    display: block;
+    z-index: 2;
+    position: fixed; }
+  #home .container .navbar {
+    transition: 0.3s; }
+    #home .container .navbar .nav {
+      display: none; }
+      #home .container .navbar .nav ul {
+        flex-direction: column; }
+        #home .container .navbar .nav ul li {
+          padding: 20px 0; }
+          #home .container .navbar .nav ul li a {
+            font-weight: 500; }
+    #home .container .navbar label {
+      display: block;
+      color: white;
+      margin: 10px;
+      position: relative;
+      top: -9px; }
+      #home .container .navbar label .close-btn {
+        display: none; }
+      #home .container .navbar label .menu-btn {
+        position: absolute; }
+  #home .container .content .title h1 {
+    font-size: 2rem;
+    line-height: 2.5rem; }
+  #features .feature-icon {
+    margin: 50px 195px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center; }
+  #slider .accordion {
+    padding-top: 88px;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto; }
+    #slider .accordion ul li:nth-child(1) {
+      height: 100px;
+      width: 244px;
+      background-image: url("../images/drag1.png"); }
+      #slider .accordion ul li:nth-child(1):hover {
+        transform: scaleY(0.9); }
+    #slider .accordion ul li:nth-child(2) {
+      height: 100px;
+      width: 244px;
+      background-image: url("../images/drag2.png"); }
+      #slider .accordion ul li:nth-child(2):hover {
+        transform: scaleY(0.9); }
+    #slider .accordion ul li:nth-child(3) {
+      height: 100px;
+      width: 244px;
+      background-image: url("../images/drag3.png"); }
+      #slider .accordion ul li:nth-child(3):hover {
+        transform: scaleY(0.9); }
+    #slider .accordion:hover ul li {
+      width: 0px; }
+      #slider .accordion:hover ul li:hover {
+        width: 0px; }
+  #screenshots .phones {
+    display: flex;
+    margin: 0px 10px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #screenshots .phones .left-col {
+      width: 20%;
+      margin: 0 80px; }
+      #screenshots .phones .left-col .cloicon {
+        font-size: 9rem;
+        left: 229px;
+        top: 186px; }
+      #screenshots .phones .left-col .rainyicon {
+        top: 234px;
+        left: 229px;
+        font-size: 12.6rem; }
+    #screenshots .phones .right-col {
+      margin: 0 125px;
+      width: 33%; }
+      #screenshots .phones .right-col .sunnyicon {
+        top: 257px;
+        right: -178px;
+        font-size: 12.6rem; }
+    #screenshots .phones .screeniconscoludly {
+      left: 311px; }
+    #screenshots .phones .screendereceicon {
+      left: 54px; }
+  #reviews .rewis .rewi-item {
+    width: 88%; }
+    #reviews .rewis .rewi-item .sag-tirnak {
+      position: relative;
+      left: 497px;
+      top: -16px; }
+  #download .d-content .title p {
+    margin: 50px 0; }
+  #download .d-content .image img {
+    bottom: -71px;
+    width: 109%;
+    margin-top: 116px; }
+  footer #check {
+    display: none; }
+    footer #check:checked ~ footer .navbar .nav {
+      padding: 50px;
+      position: fixed;
+      height: 150vh;
+      top: 100px;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #404c61;
+      text-align: center;
+      opacity: 0.95;
+      transition: 0.3s;
+      border-bottom-left-radius: 120px;
+      border-top-left-radius: 120px;
+      border-bottom-right-radius: 120px; }
+    footer #check:checked ~ footer .navbar label .menu-btn {
+      display: none; }
+    footer #check:checked ~ footer .navbar label .close-btn {
+      display: block;
+      z-index: 2;
+      position: fixed; }
+  footer .navbar .nav {
+    display: none; }
+    footer .navbar .nav ul {
+      flex-direction: column; }
+      footer .navbar .nav ul li {
+        padding: 20px 0; }
+        footer .navbar .nav ul li a {
+          font-weight: 500; }
+  footer .navbar label {
+    display: block;
+    color: white;
+    margin: 10px;
+    position: relative;
+    top: -9px; }
+    footer .navbar label .close-btn {
+      display: none; }
+    footer .navbar label .menu-btn {
+      position: absolute; } }
+
+@media screen and (max-width: 500px) {
+  #home {
+    height: 100vh;
+    width: 100%; }
+    #home .container .content {
+      display: flex;
+      width: 100%;
+      height: 70vh;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+      align-items: center; }
+      #home .container .content .home-phone {
+        margin: 60px;
+        align-items: center;
+        width: 68%; }
+      #home .container .content .title {
+        width: 60%; }
+  #features {
+    width: 100%; }
+    #features .feature-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  #slider .accordion {
+    width: 460px;
+    height: 300px; }
+    #slider .accordion ul {
+      height: 286px; }
+      #slider .accordion ul li {
+        width: 60px; }
+        #slider .accordion ul li:nth-child(1) {
+          width: 50px; }
+        #slider .accordion ul li:nth-child(2) {
+          width: 50px; }
+        #slider .accordion ul li:nth-child(3) {
+          width: 50px; }
+    #slider .accordion:hover ul li {
+      width: 0px; }
+      #slider .accordion:hover ul li:hover {
+        width: 0px; }
+  #screenshots .phones {
+    padding: 36px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch; }
+    #screenshots .phones .screeniconscoludly {
+      left: 310px; }
+    #screenshots .phones .screendereceicon {
+      left: 48px; }
+    #screenshots .phones .left-col {
+      align-self: center;
+      width: 100%;
+      text-align: center; }
+      #screenshots .phones .left-col .icocloudly {
+        z-index: -1;
+        color: #fff;
+        font-size: 12px;
+        background-color: #e27a03;
+        position: absolute;
+        border-radius: 100%;
+        padding: 30px 20px; }
+      #screenshots .phones .left-col .cloicon {
+        font-size: 10rem;
+        left: 171px;
+        top: 338px; }
+      #screenshots .phones .left-col .rainyicon {
+        top: 398px;
+        left: 162px; }
+      #screenshots .phones .left-col img {
+        align-items: center; }
+      #screenshots .phones .left-col .l-title {
+        margin-right: 26px; }
+    #screenshots .phones .right-col {
+      margin: 0;
+      align-self: center;
+      width: 100%;
+      text-align: center; }
+      #screenshots .phones .right-col .sunnyicon {
+        top: 372px;
+        right: -175px;
+        font-size: 13.6rem; }
+      #screenshots .phones .right-col .title {
+        width: 457px; }
+  #reviews .rewis .rewi-item .sag-tirnak {
+    left: 250px; }
+  #download .d-content {
+    display: flex;
+    flex-direction: column; }
+    #download .d-content .title {
+      width: 95%;
+      text-align: center;
+      padding: 0; }
+      #download .d-content .title p {
+        margin: 50px 0; }
+    #download .d-content .image {
+      width: 85%;
+      align-self: center; }
+      #download .d-content .image img {
+        bottom: -5px;
+        width: 100%;
+        margin-top: 116px; } }
+
+@media screen and (max-width: 360px) {
+  #home {
+    height: 110vh;
+    width: 100%; }
+    #home .container .content {
+      align-items: center;
+      width: 100%; }
+      #home .container .content .home-phone {
+        margin: 60px;
+        align-items: center;
+        width: 68%; }
+      #home .container .content .title {
+        width: 100%; }
+        #home .container .content .title button {
+          padding: 9px 30px; }
+    #home .container .navbar {
+      align-items: center;
+      justify-content: center; }
+  #features {
+    width: 90%; }
+    #features .feature-icon {
+      align-items: center;
+      margin: 18px 17px; }
+  #slider {
+    width: 100%; }
+    #slider .accordion {
+      width: 80%;
+      height: 300px; }
+      #slider .accordion ul {
+        height: 176px;
+        width: 100%; }
+        #slider .accordion ul li {
+          width: 50%; }
+          #slider .accordion ul li:nth-child(1) {
+            width: 60px; }
+          #slider .accordion ul li:nth-child(2) {
+            width: 60px; }
+          #slider .accordion ul li:nth-child(3) {
+            width: 60px; }
+      #slider .accordion:hover ul li {
+        width: 0px; }
+        #slider .accordion:hover ul li:hover {
+          width: 0px; }
+  #screenshots .phones .screeniconscoludly {
+    left: 199px;
+    padding: 17px 6px;
+    position: relative;
+    font-size: 0.6rem;
+    top: -150px; }
+  #screenshots .phones .screendereceicon {
+    left: 63px;
+    padding: 14px 15px;
+    font-size: 0.6rem;
+    top: -198px;
+    position: relative; }
+  #screenshots .phones .left-col {
+    align-self: center;
+    width: 100%;
+    text-align: center; }
+    #screenshots .phones .left-col .icocloudly {
+      z-index: -1;
+      color: #fff;
+      font-size: 12px;
+      background-color: #e27a03;
+      position: absolute;
+      border-radius: 100%;
+      padding: 30px 20px; }
+    #screenshots .phones .left-col .cloicon {
+      font-size: 7rem;
+      left: 108px;
+      top: 225px; }
+    #screenshots .phones .left-col .rainyicon {
+      top: 265px;
+      left: 125px;
+      font-size: 9rem; }
+    #screenshots .phones .left-col img {
+      width: 50%;
+      align-items: center; }
+    #screenshots .phones .left-col .l-title {
+      margin-right: 26px; }
+    #screenshots .phones .left-col .l-icon img {
+      width: 40%; }
+  #screenshots .phones .right-col {
+    margin: 10px; }
+    #screenshots .phones .right-col .sunnyicon {
+      top: 256px;
+      right: -116px;
+      font-size: 8.6rem; }
+    #screenshots .phones .right-col .title {
+      width: 339px;
+      text-align: center; }
+    #screenshots .phones .right-col img {
+      width: 50%; }
+  #reviews .rewis .rewi-item .sag-tirnak {
+    left: 144px; } }

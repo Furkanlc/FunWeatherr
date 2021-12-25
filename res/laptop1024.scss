@@ -1,0 +1,324 @@
+// RESPONSİVE 1024 OLUNCA
+@media screen and(max-width:1024px) {
+    #home {
+        height: 90vh;
+        width: 100%;
+
+        .container {
+            .navbar{
+                label{
+                    display: none;
+                }
+            }
+            .content {
+                .home-phone {
+                    width: 40%;
+
+                    img {
+                        top: 20px;
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+
+    #slider {
+
+        .accordion {
+            padding-top: 170px;
+            width: 90%;
+            max-width: 800px;
+
+            overflow: hidden;
+            margin: 20px auto;
+
+            ul {
+                height: 500px;
+
+                li {
+
+                    &:nth-child(1) {
+
+
+                        background-image: url("../images/drag1.png");
+                    }
+
+                    &:nth-child(2) {
+
+
+                        background-image: url("../images/drag2.png");
+                    }
+
+                    &:nth-child(3) {
+
+
+                        background-image: url("../images/drag3.png");
+                    }
+
+                }
+            }
+
+   
+   
+   
+   
+   
+   
+   
+
+           
+           
+           
+           
+           
+           
+           
+           
+        }
+
+
+
+
+
+
+
+    }
+
+
+    #screenshots {
+        padding-top: 40px;
+
+        .phones {
+
+            .screeniconscoludly {
+
+                z-index: 1;
+                color: black;
+                font-size: 12px;
+                background-color: yellow;
+                position: absolute;
+                border-radius: 100%;
+                padding: 30px 10px;
+                left: 414px;
+            }
+
+            .screendereceicon {
+
+                z-index: 1;
+                color: black;
+                font-size: 12px;
+                background-color: yellow;
+                position: absolute;
+                border-radius: 100%;
+                padding: 30px 30px;
+                left: 134px;
+
+            }
+
+            display: flex;
+            margin: 0px 10px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .left-col {
+                width: 20%;
+                margin: 0 80px;
+
+                .icocloudly {
+                    z-index: -1;
+                    color: #fff;
+                    font-size: 12px;
+                    background-color: $colororange;
+                    position: absolute;
+                    border-radius: 100%;
+                    padding: 30px 20px;
+
+
+                }
+
+                .cloicon {
+
+                    font-size: 11rem;
+                    font-weight: 300;
+                    transform: rotate(90deg);
+                    position: relative;
+                    color: rgb(221, 221, 221);
+                    z-index: -1;
+                    left: 197px;
+                    top: 166px;
+
+
+                }
+
+                .rainyicon {
+                    top: 245px;
+                    left: 217px;
+                    font-size: 14.6rem;
+                    font-weight: 300;
+                    transform: rotate(90deg);
+                    position: relative;
+                    color: #ddd;
+                    z-index: -1;
+                }
+
+
+                img {
+
+
+                    align-items: center;
+                }
+
+                .l-icon {
+                    margin: 30px 0;
+
+                }
+
+                .l-title {
+                    h1 {
+                        font-size: 36px;
+                        margin: 15px 0;
+                        letter-spacing: 1.5px;
+                    }
+
+                    p {
+                        color: gray;
+                        font-size: 20px;
+                        font-weight: 550;
+                    }
+                }
+
+
+            }
+
+            .right-col {
+                margin: 0 125px;
+                width: 20%;
+
+                .sunnyicon {
+                    top: 216px;
+                    right: -216px;
+                    font-size: 14.6rem;
+                    font-weight: 300;
+                    transform: rotate(90deg);
+                    position: relative;
+                    color: #ddd;
+                    z-index: -1;
+
+
+
+
+
+
+
+                }
+
+
+                .r-icon {
+                    margin: 30px 0;
+
+
+                }
+
+                .title {
+                    h1 {
+                        font-size: 36px;
+                        margin: 15px 0;
+                        letter-spacing: 1.5px;
+                    }
+
+                    p {
+                        color: gray;
+                        font-size: 20px;
+                        font-weight: 550;
+                    }
+                }
+            }
+        }
+    }
+
+    #reviews {
+
+
+
+
+
+
+
+        .rewis {
+            .rewi-item {
+                margin: 5px 60px;
+                width: 35%;
+
+                .text {
+                    margin: 0;
+
+
+
+                }
+
+                .names {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+
+                .sol-tirnak {
+                    font-size: 1rem;
+
+                }
+
+                .sag-tirnak {
+                    font-size: 1rem;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+        }
+    }
+
+    #download {
+
+        .d-content {
+            .title {
+
+                p {
+                    margin: 35px 0;
+
+
+
+
+                }
+            }
+
+            .image {
+                width: 40%;
+
+                img {
+                    position: relative;
+                    bottom: -69px;
+                    width: 75%;
+                    margin-top: 70px;
+                }
+            }
+
+
+        }
+
+    }
+}

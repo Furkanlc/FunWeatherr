@@ -1,0 +1,198 @@
+@media screen and(max-width:360px) {
+    #home {
+        height: 110vh;
+        width: 100%;
+
+        .container {
+            .content {
+
+                align-items: center;
+                width: 100%;
+
+
+
+
+                .home-phone {
+                    margin: 60px;
+                    align-items: center;
+                    width: 68%;
+                }
+
+                .title {
+                    width: 100%;
+
+                    button {
+                        padding: 9px 30px;
+                    }
+                }
+            }
+
+            .navbar {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    #features {
+        width: 90%;
+
+        .feature-icon {
+            align-items: center;
+            margin: 18px 17px;
+
+
+        }
+    }
+
+    #slider {
+        width: 100%;
+
+        .accordion {
+
+            width: 80%;
+            height: 300px;
+
+            ul {
+                height: 176px;
+                width: 100%;
+
+                li {
+                    width: 50%;
+
+                    &:nth-child(1) {
+                        width: 60px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 60px;
+                    }
+
+                    &:nth-child(3) {
+                        width: 60px;
+                    }
+                }
+            }
+
+            &:hover {
+                ul {
+                    li {
+                        width: 0px;
+
+                        &:hover {
+                            width: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #screenshots {
+        .phones {
+
+
+            .screeniconscoludly {
+                left: 199px;
+                padding: 17px 6px;
+                position: relative;
+                font-size: 0.6rem;
+                top: -150px;
+
+
+            }
+
+            .screendereceicon {
+                left: 63px;
+                padding: 14px 15px;
+                font-size: 0.6rem;
+                top: -198px;
+                position: relative;
+
+
+            }
+
+            .left-col {
+                align-self: center;
+                width: 100%;
+                text-align: center;
+
+                .icocloudly {
+                    z-index: -1;
+                    color: #fff;
+                    font-size: 12px;
+                    background-color: $colororange;
+                    position: absolute;
+                    border-radius: 100%;
+                    padding: 30px 20px;
+                }
+
+                .cloicon {
+                    font-size: 7rem;
+                    left: 108px;
+                    top: 225px;
+
+
+                }
+
+                .rainyicon {
+                    top: 265px;
+                    left: 125px;
+                    font-size: 9rem;
+
+                }
+
+                img {
+                    width: 50%;
+                    align-items: center;
+                }
+
+                .l-title {
+                    margin-right: 26px;
+                }
+
+                .l-icon {
+
+
+                    img {
+                        width: 40%;
+                    }
+                }
+            }
+
+            .right-col {
+                margin: 10px;
+
+
+
+
+                .sunnyicon {
+                    top: 256px;
+                    right: -116px;
+                    font-size: 8.6rem;
+
+
+                }
+
+                .title {
+                    width: 339px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    #reviews{
+        .rewis{
+            .rewi-item{
+                .sag-tirnak {
+                    left: 144px;
+                }
+            }
+        }
+    }  
+}
