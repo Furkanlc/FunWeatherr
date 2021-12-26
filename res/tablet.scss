@@ -4,10 +4,13 @@
             &:checked~.container .navbar .nav {
                 padding: 50px;
                 position: fixed;
-                top: 0;
+                top: 0px;
                 height: 50vh;
                 bottom: 0;
-                right: 0;
+                right: 0px;
+               
+               
+               
                 display: flex;
                 justify-content: center;
                 background-color: #404c61;

@@ -1,7 +1,7 @@
 @media screen and(max-width:500px) {
 
     #home {
-        height: 100vh;
+        height: 120vh;
         width: 100%;
 
         .container {
@@ -39,6 +39,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 0;
+            padding: 0;
+
+
 
 
         }
@@ -163,7 +167,8 @@
 
                     align-items: center;
                 }
-                .l-title{
+
+                .l-title {
                     margin-right: 26px;
                 }
 
@@ -197,31 +202,35 @@
         }
     }
 
-    #reviews{
-        .rewis{
-            .rewi-item{
+    #reviews {
+        .rewis {
+            .rewi-item {
                 .sag-tirnak {
                     left: 250px;
                 }
             }
         }
-    }  
+    }
 
     #download {
         .d-content {
             display: flex;
             flex-direction: column;
+
             .title {
                 width: 95%;
                 text-align: center;
                 padding: 0;
+
                 p {
                     margin: 50px 0;
                 }
             }
+
             .image {
                 width: 85%;
                 align-self: center;
+
                 img {
                     bottom: -5px;
                     width: 100%;
